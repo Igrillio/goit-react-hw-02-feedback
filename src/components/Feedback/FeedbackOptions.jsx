@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { nanoid } from 'nanoid';
 
 function FeedbackOptions({ options, onLeaveFeedback }) {
-  // const [good, neutral, bad] = options;
   return (
     <ul className={css.btnList}>
       {options.map(el => (
@@ -19,37 +18,6 @@ function FeedbackOptions({ options, onLeaveFeedback }) {
       ))}
     </ul>
   );
-  // return (
-  //   <ul className={css.btnList}>
-  //     <li>
-  //       <button
-  //         className={css.btn}
-  //         type="button"
-  //         onClick={() => onLeaveFeedback(good)}
-  //       >
-  //         Good
-  //       </button>
-  //     </li>
-  //     <li>
-  //       <button
-  //         className={css.btn}
-  //         type="button"
-  //         onClick={() => onLeaveFeedback(neutral)}
-  //       >
-  //         Neutral
-  //       </button>
-  //     </li>
-  //     <li>
-  //       <button
-  //         className={css.btn}
-  //         type="button"
-  //         onClick={() => onLeaveFeedback(bad)}
-  //       >
-  //         Bad
-  //       </button>
-  //     </li>
-  //   </ul>
-  // );
 }
 
 FeedbackOptions.propTypes = {
